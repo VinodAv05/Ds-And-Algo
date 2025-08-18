@@ -6,7 +6,6 @@ class Solution(object):
         """
         winner_map = {}
         looser_map = {}
-        winner_list = []
         looser_list = []
         
         for match in matches:
