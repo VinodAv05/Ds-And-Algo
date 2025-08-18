@@ -20,14 +20,11 @@ class Solution(object):
             else:
                 looser_map[match[1]]=1
         
-        for key in winner_map:
-            if key not in looser_map:
-                winner_list.append(key)
-        winner_list.sort()
-        
         for key, value in looser_map.items():
             if value ==1:
                 looser_list.append(key)
+            if key in winner_map:
+                del winner_map[key]
         looser_list.sort()    
         
-        return [winner_list,looser_list]
+        return [sorted(winner_map.keys()),looser_list]
