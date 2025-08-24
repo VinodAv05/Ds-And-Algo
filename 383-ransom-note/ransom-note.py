@@ -15,8 +15,7 @@ class Solution:
                 magazine_map[k]+=1
             else:
                 magazine_map[k]=1
-        print("Ransom Map=>",ransom_map)
-        print("Magzine Map=>",magazine_map)
+
         for key in ransom_map.keys():
             print("Ran Key=>",key)
             if key in magazine_map:
