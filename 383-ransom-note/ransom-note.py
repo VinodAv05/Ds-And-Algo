@@ -4,13 +4,13 @@ class Solution:
         magazine_map = {}
         check_valid = False
         
-        for s in "".join(sorted(ransomNote)):
+        for s in ransomNote:
             if s in ransom_map:
                 ransom_map[s]+=1
             else:
                 ransom_map[s]=1
         
-        for k in "".join(sorted(magazine)):
+        for k in magazine:
             if k in magazine_map:
                 magazine_map[k]+=1
             else:
