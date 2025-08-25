@@ -17,6 +17,7 @@ class Solution:
                 magazine_map[k]=1
 
         for key in ransom_map.keys():
+            print("Ran Key=>",key)
             if key in magazine_map:
                 if magazine_map[key]>=ransom_map[key]:
                     check_valid = True
