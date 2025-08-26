@@ -11,7 +11,7 @@ class Solution:
             else:
                 holding_map[counter]+=s[i]
                 
-        values_len = [len(val) for val in holding_map.values()]
+        #values_len = [len(val) for val in holding_map.values()]
         
         for key in holding_map:
             max_s_len = max(max_s_len, len(holding_map[key]))
