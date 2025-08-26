@@ -1,6 +1,5 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        test_var = "abcabcdb"
         counter = 0
         holding_map={0:''}
         tmp_str=''
