@@ -12,7 +12,6 @@ class Solution:
             else:
                 holding_map[counter]+=s[i]
                 
-        print("Inside outer else Holding Map=>",holding_map.values())
         values_len = [len(val) for val in holding_map.values()]
         print("Inside outer else Holding Map Len=>",values_len)
         return max(values_len)
