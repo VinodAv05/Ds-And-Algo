@@ -2,7 +2,6 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         counter = 0
         holding_map={0:''}
-        tmp_str=''
         
         for i in range(len(s)):
             if s[i] in holding_map[counter]:
