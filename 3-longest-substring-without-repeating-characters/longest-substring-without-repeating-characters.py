@@ -12,4 +12,5 @@ class Solution:
                 str_map[c]+=s[i]
                 
         values_len = [len(val) for val in str_map.values()]
+        #print("str_map",str_map)
         return max(values_len)
