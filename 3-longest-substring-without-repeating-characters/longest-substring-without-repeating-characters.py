@@ -11,8 +11,4 @@ class Solution:
                 sub_str = s[c:i]
             str_map[s[i]] = i
             sub_str_len = max(sub_str_len, len(sub_str))
-        return sub_str_len
-            
-            
-            
-            
+        return sub_str_len      
