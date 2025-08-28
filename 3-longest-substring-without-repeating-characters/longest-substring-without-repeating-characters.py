@@ -4,7 +4,6 @@ class Solution:
         str_map={}
         sub_str_len=0
         sub_str = ''
-        #abcba
         for i in range(len(s)):
             sub_str+=s[i]
             if s[i] in str_map and str_map[s[i]]>=c:
